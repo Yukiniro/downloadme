@@ -1,6 +1,6 @@
 {
   "name": "downloadmejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web downloader for media.",
   "main": "dist/downloadme.js",
   "scripts": {

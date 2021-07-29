@@ -1,5 +1,9 @@
 export default (function () {
 
+  /**
+   * @description 创建用以下载的标签
+   * @returns 
+   */
   function createLink() {
     let a = document.createElement('a');
     document.body.appendChild(a);
