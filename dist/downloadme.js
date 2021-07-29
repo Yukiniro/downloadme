@@ -5,6 +5,10 @@
 }(this, (function () { 'use strict';
 
   var index = (function () {
+    /**
+     * @description 创建用以下载的标签
+     * @returns 
+     */
     function createLink() {
       var a = document.createElement('a');
       document.body.appendChild(a);
