@@ -19,7 +19,7 @@ export default (function () {
       const {name} = options;
       const a = createLink();
       let url;
-      const useURL = false;
+      let useURL = false;
       if (typeof source === 'string') {
         url = source;
       } else {

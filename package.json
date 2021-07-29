@@ -1,15 +1,27 @@
 {
   "name": "downloadmejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Web downloader for media.",
+  "main": "dist/downloadme.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
   },
   "keywords": [
     "download",
-    "media"
+    "media",
+    "blob",
+    "web"
   ],
   "author": "Yukiniro",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "babel": "^6.23.0",
+    "rollup": "^2.55.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.8",
+    "rollup-plugin-babel": "^4.4.0"
+  }
 }
