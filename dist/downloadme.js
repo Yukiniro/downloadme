@@ -1,55 +1,47 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.downloadme = factory());
-}(this, (function () { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+    typeof define === 'function' && define.amd ? define(['exports'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.downloadme = {}));
+}(this, (function (exports) { 'use strict';
 
-  var index = (function () {
     /**
-     * @description 创建用以下载的标签
-     * @returns 
+     * @desc create a tag to download
+     * @returns {HTMLAnchorElement}
      */
     function createLink() {
-      var a = document.createElement('a');
-      document.body.appendChild(a);
-      a.style.display = 'none';
-      return a;
+        var a = document.createElement("a");
+        document.body.appendChild(a);
+        a.style.display = "none";
+        return a;
     }
-
-    return {
-      /**
-       * @description 下载
-       * @param source <string | file | blob>
-       * @param options
-       * @param options.name
-       */
-      download: function download(source) {
-        var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-          name: ''
-        };
+    /**
+     * @desc download media
+     * @param {string | File | Blob} source - the source of media
+     * @param {Object} options - the optional data
+     * @param {string} [options.name] - the name of downloaded media
+     */
+    function download(source, options) {
         var name = options.name;
         var a = createLink();
         var url;
         var useURL = false;
-
-        if (typeof source === 'string') {
-          url = source;
-        } else {
-          url = URL.createObjectURL(source);
-          useURL = true;
+        if (typeof source === "string") {
+            url = source;
         }
-
+        else {
+            url = URL.createObjectURL(source);
+            useURL = true;
+        }
         a.href = url;
         a.download = name;
         a.click();
-
         if (useURL) {
-          URL.revokeObjectURL(url);
+            URL.revokeObjectURL(url);
         }
-      }
-    };
-  })();
+    }
 
-  return index;
+    exports.download = download;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
 
 })));

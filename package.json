@@ -1,12 +1,14 @@
 {
   "name": "downloadmejs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web downloader for media.",
   "main": "dist/downloadme.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "publish": "npm publish"
+    "prettier": "npx prettier --write src/**/*.ts",
+    "doc": "npx esdoc",
+    "publish": "rollup -c && npm publish"
   },
   "keywords": [
     "download",
@@ -33,6 +35,13 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.8",
-    "rollup-plugin-babel": "^4.4.0"
+    "@rollup/plugin-typescript": "^8.3.0",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "esdoc-typescript-plugin": "^1.0.1",
+    "prettier": "^2.4.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2"
   }
 }
