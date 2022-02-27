@@ -1,3 +1,7 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
 /**
 * @description 创建用以下载的标签
 * @returns 
@@ -34,4 +38,4 @@ function download(source) {
   }
 }
 
-export { download };
+exports.download = download;
