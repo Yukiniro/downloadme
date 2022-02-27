@@ -1,7 +1,8 @@
 import babel from 'rollup-plugin-babel'
+import typescript from '@rollup/plugin-typescript';
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.ts',
   output: [
     {
       file: 'dist/downloadme.js',
@@ -22,8 +23,9 @@ export default {
     },
   ],
   plugins: [
+    typescript(),
     babel({
       exclude: 'node_modules'
-    })
+    }),
   ]
 }
