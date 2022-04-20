@@ -8,13 +8,13 @@ Here is the [Demo](https://downloadme.vercel.app/).
 ## Installation
 
 ```shell
-npm i downloadme -D
+npm i downloadmejs -D
 ```
 
 or 
 
 ```shell
-pnpm add downloadme -D
+pnpm add downloadmejs -D
 ```
 
 ## Useage
