@@ -1,21 +1,27 @@
 # downloadme
 
-## Documentation
+## Intro
 
 It is a tiny library to download media.  
-Here is the [Doc](docs) and [Demo](demo).
+Here is the [Demo](https://downloadme.vercel.app/).
 
 ## Installation
 
-```sh
-npm i downloadme --save
+```shell
+npm i downloadme -D
+```
+
+or 
+
+```shell
+pnpm add downloadme -D
 ```
 
 ## Useage
 
 ```javascript
-import downloadme from 'downloadme'
+import { download } from 'downloadmejs'
 
 // blob is a variable for a video
-downloadme(blob, {name: 'test.mp4'});
+download(blob, {name: 'test.mp4'});
 ```
