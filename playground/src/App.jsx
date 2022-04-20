@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { download } from '../../src/index'
+import { download } from 'downloadmejs'
 
 function App() {
   const [url, setUrl] = useState('https://images.unsplash.com/photo-1580761743271-99d222ab2758');
