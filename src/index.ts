@@ -21,7 +21,7 @@ export function download(
 ) {
   const { name } = options;
   const a = createLink();
-  let url;
+  let url: string;
   let useURL = false;
   if (typeof source === "string") {
     url = source;

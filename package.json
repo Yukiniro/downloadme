@@ -2,12 +2,11 @@
   "name": "downloadmejs",
   "version": "1.0.5",
   "description": "Web downloader for media.",
-  "main": "dist/downloadme.js",
+  "main": "dist/downloadme.cjs.js",
+  "module": "dist/downloadme.esm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "rollup -c rollup.config.dev.js",
-    "build:prod": "rollup -c rollup.config.prod.js",
-    "publish": "npm run build:dev && npm run build:prod && npm publish",
+    "build": "rollup -c rollup.config.js",
+    "publish": "npm run build && npm publish",
     "prettier": "npx prettier --write src/**/*.ts",
     "doc": "npx esdoc"
   },
