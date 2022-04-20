@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+textarea, input {
+  margin: 20px;
+}
+
+textarea {
+  min-width: 500px;
+}
