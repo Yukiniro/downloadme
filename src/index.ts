@@ -18,7 +18,7 @@ function createLink(): HTMLAnchorElement {
 export function download(
   source: string | File | Blob,
   options: { name?: string }
-) {
+): void {
   const { name } = options;
   const a = createLink();
   let url: string;

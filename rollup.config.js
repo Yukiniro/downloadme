@@ -1,10 +1,9 @@
 import babel from 'rollup-plugin-babel'
-import typescript from '@rollup/plugin-typescript'
+import typescript from "rollup-plugin-typescript2"
 
 export default {
   input: 'src/index.ts',
-  output: [
-    {
+  output: [{
       file: 'dist/downloadme.esm.min.js',
       format: 'esm'
     },
@@ -14,7 +13,13 @@ export default {
     },
   ],
   plugins: [
-    typescript(),
+    typescript({
+      tsconfigOverride: {
+        compilerOptions: {
+          declaration: true,
+        }
+      }
+    }),
     babel({
       exclude: 'node_modules'
     }),
