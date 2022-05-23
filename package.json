@@ -1,6 +1,6 @@
 {
   "name": "downloadmejs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Web downloader for media.",
   "main": "dist/downloadme.cjs.js",
   "module": "dist/downloadme.esm.js",
