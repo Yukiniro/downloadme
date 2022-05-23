@@ -1,9 +1,9 @@
 {
   "name": "downloadmejs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Web downloader for media.",
-  "main": "dist/downloadme.cjs.js",
-  "module": "dist/downloadme.esm.js",
+  "main": "dist/downloadme.min.cjs",
+  "module": "dist/downloadme.min.mjs",
   "types": "dist",
   "scripts": {
     "build": "rollup -c rollup.config.js",

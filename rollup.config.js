@@ -4,11 +4,11 @@ import typescript from "rollup-plugin-typescript2"
 export default {
   input: 'src/index.ts',
   output: [{
-      file: 'dist/downloadme.esm.min.js',
+      file: 'dist/downloadme.min.mjs',
       format: 'esm'
     },
     {
-      file: 'dist/downloadme.cjs.min.js',
+      file: 'dist/downloadme.min.cjs',
       format: 'cjs'
     },
   ],
