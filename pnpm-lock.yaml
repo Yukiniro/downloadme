@@ -8,7 +8,7 @@ specifiers:
   esdoc-standard-plugin: ^1.0.0
   esdoc-typescript-plugin: ^1.0.1
   prettier: ^2.4.1
-  rollup: ^2.55.0
+  rollup: ^3.0.0
   rollup-plugin-babel: ^4.4.0
   rollup-plugin-terser: ^7.0.2
   rollup-plugin-typescript2: ^0.31.2
@@ -23,10 +23,10 @@ devDependencies:
   esdoc-standard-plugin: 1.0.0
   esdoc-typescript-plugin: 1.0.1
   prettier: 2.5.1
-  rollup: 2.68.0
-  rollup-plugin-babel: 4.4.0_tga3pvj5hvhhh4te2a7ncqct3u
-  rollup-plugin-terser: 7.0.2_rollup@2.68.0
-  rollup-plugin-typescript2: 0.31.2_es6i7ndltuixweadwc5azndjci
+  rollup: 3.5.0
+  rollup-plugin-babel: 4.4.0_w2o4rlgutr3doyczzujvz32y44
+  rollup-plugin-terser: 7.0.2_rollup@3.5.0
+  rollup-plugin-typescript2: 0.31.2_hf2pm3a6mt5oteu2zafta2ls4q
   tslib: 2.3.1
   typescript: 4.5.5
 
@@ -2173,7 +2173,7 @@ packages:
     optional: true
 
   /jsdom/7.2.2:
-    resolution: {integrity: sha1-QLQCdwwr2iNGkJa+6Rq2deOx/G4=}
+    resolution: {integrity: sha512-kYeYuos/pYp0V/V8VAoGnUc0va0UZjTjwCsldBFZNBrOi9Q5kUXrvsw6W5/lQllB7hKXBARC4HRk1Sfk4dPFtA==}
     requiresBuild: true
     dependencies:
       abab: 1.0.4
@@ -2697,7 +2697,7 @@ packages:
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
 
-  /rollup-plugin-babel/4.4.0_tga3pvj5hvhhh4te2a7ncqct3u:
+  /rollup-plugin-babel/4.4.0_w2o4rlgutr3doyczzujvz32y44:
     resolution: {integrity: sha512-Lek/TYp1+7g7I+uMfJnnSJ7YWoD58ajo6Oarhlex7lvUce+RCKRuGRSgztDO3/MF/PuGKmUL5iTHKf208UNszw==}
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-babel.
     peerDependencies:
@@ -2706,23 +2706,23 @@ packages:
     dependencies:
       '@babel/core': 7.17.5
       '@babel/helper-module-imports': 7.16.7
-      rollup: 2.68.0
+      rollup: 3.5.0
       rollup-pluginutils: 2.8.2
     dev: true
 
-  /rollup-plugin-terser/7.0.2_rollup@2.68.0:
+  /rollup-plugin-terser/7.0.2_rollup@3.5.0:
     resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==}
     peerDependencies:
       rollup: ^2.0.0
     dependencies:
       '@babel/code-frame': 7.16.7
       jest-worker: 26.6.2
-      rollup: 2.68.0
+      rollup: 3.5.0
       serialize-javascript: 4.0.0
       terser: 5.11.0
     dev: true
 
-  /rollup-plugin-typescript2/0.31.2_es6i7ndltuixweadwc5azndjci:
+  /rollup-plugin-typescript2/0.31.2_hf2pm3a6mt5oteu2zafta2ls4q:
     resolution: {integrity: sha512-hRwEYR1C8xDGVVMFJQdEVnNAeWRvpaY97g5mp3IeLnzhNXzSVq78Ye/BJ9PAaUfN4DXa/uDnqerifMOaMFY54Q==}
     peerDependencies:
       rollup: '>=1.26.3'
@@ -2733,7 +2733,7 @@ packages:
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
       resolve: 1.22.0
-      rollup: 2.68.0
+      rollup: 3.5.0
       tslib: 2.3.1
       typescript: 4.5.5
     dev: true
@@ -2744,9 +2744,9 @@ packages:
       estree-walker: 0.6.1
     dev: true
 
-  /rollup/2.68.0:
-    resolution: {integrity: sha512-XrMKOYK7oQcTio4wyTz466mucnd8LzkiZLozZ4Rz0zQD+HeX4nUK4B8GrTX/2EvN2/vBF/i2WnaXboPxo0JylA==}
-    engines: {node: '>=10.0.0'}
+  /rollup/3.5.0:
+    resolution: {integrity: sha512-TYu2L+TGhmNsXCtByont89u+ATQLcDy6A+++PwLXYunRtOm7XnaD+65s1pvewaOxMYR0eOkMXn9/i0saBxxpnQ==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
