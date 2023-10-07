@@ -11,7 +11,7 @@ specifiers:
   prettier: ^3.0.0
   rollup: ^4.0.0
   rollup-plugin-terser: ^7.0.2
-  rollup-plugin-typescript2: ^0.35.0
+  rollup-plugin-typescript2: ^0.36.0
   tslib: ^2.3.1
   typescript: ^5.0.0
 
@@ -26,7 +26,7 @@ devDependencies:
   prettier: 3.0.0
   rollup: 4.0.0
   rollup-plugin-terser: 7.0.2_rollup@4.0.0
-  rollup-plugin-typescript2: 0.35.0_sv34pcthbpfb3l3fqzijlur4bu
+  rollup-plugin-typescript2: 0.36.0_sv34pcthbpfb3l3fqzijlur4bu
   tslib: 2.3.1
   typescript: 5.1.6
 
@@ -2781,8 +2781,8 @@ packages:
       terser: 5.11.0
     dev: true
 
-  /rollup-plugin-typescript2/0.35.0_sv34pcthbpfb3l3fqzijlur4bu:
-    resolution: {integrity: sha512-szcIO9hPUx3PhQl91u4pfNAH2EKbtrXaES+m163xQVE5O1CC0ea6YZV/5woiDDW3CR9jF2CszPrKN+AFiND0bg==}
+  /rollup-plugin-typescript2/0.36.0_sv34pcthbpfb3l3fqzijlur4bu:
+    resolution: {integrity: sha512-NB2CSQDxSe9+Oe2ahZbf+B4bh7pHwjV5L+RSYpCu7Q5ROuN94F9b6ioWwKfz3ueL3KTtmX4o2MUH2cgHDIEUsw==}
     peerDependencies:
       rollup: '>=1.26.3'
       typescript: '>=2.4.0'
@@ -2791,8 +2791,8 @@ packages:
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
       rollup: 4.0.0
-      semver: 7.5.3
-      tslib: 2.5.3
+      semver: 7.5.4
+      tslib: 2.6.2
       typescript: 5.1.6
     dev: true
 
@@ -2843,8 +2843,8 @@ packages:
     hasBin: true
     dev: true
 
-  /semver/7.5.3:
-    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
+  /semver/7.5.4:
+    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -2994,8 +2994,8 @@ packages:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
     dev: true
 
-  /tslib/2.5.3:
-    resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
+  /tslib/2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
   /tunnel-agent/0.6.0:
