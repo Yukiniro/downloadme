@@ -27,7 +27,7 @@ devDependencies:
   rollup: 4.0.0
   rollup-plugin-terser: 7.0.2_rollup@4.0.0
   rollup-plugin-typescript2: 0.36.0_sv34pcthbpfb3l3fqzijlur4bu
-  tslib: 2.3.1
+  tslib: 2.6.2
   typescript: 5.1.6
 
 packages:
@@ -2086,8 +2086,8 @@ packages:
       universalify: 0.1.2
     dev: true
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents/2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -2812,7 +2812,7 @@ packages:
       '@rollup/rollup-win32-arm64-msvc': 4.0.0
       '@rollup/rollup-win32-ia32-msvc': 4.0.0
       '@rollup/rollup-win32-x64-msvc': 4.0.0
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /safe-buffer/5.1.2:
@@ -2988,10 +2988,6 @@ packages:
   /trim-right/1.0.1:
     resolution: {integrity: sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /tslib/2.3.1:
-    resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
     dev: true
 
   /tslib/2.6.2:
