@@ -26,9 +26,9 @@ devDependencies:
   prettier: 3.0.0
   rollup: 4.22.4
   rollup-plugin-terser: 7.0.2_rollup@4.22.4
-  rollup-plugin-typescript2: 0.36.0_3ihclmz6romh6dvcmshzkpme6u
+  rollup-plugin-typescript2: 0.36.0_6aefou56ujxr6dcnfj4lw37lqm
   tslib: 2.3.1
-  typescript: 5.1.6
+  typescript: 5.7.3
 
 packages:
 
@@ -2825,7 +2825,7 @@ packages:
       terser: 5.11.0
     dev: true
 
-  /rollup-plugin-typescript2/0.36.0_3ihclmz6romh6dvcmshzkpme6u:
+  /rollup-plugin-typescript2/0.36.0_6aefou56ujxr6dcnfj4lw37lqm:
     resolution: {integrity: sha512-NB2CSQDxSe9+Oe2ahZbf+B4bh7pHwjV5L+RSYpCu7Q5ROuN94F9b6ioWwKfz3ueL3KTtmX4o2MUH2cgHDIEUsw==}
     peerDependencies:
       rollup: '>=1.26.3'
@@ -2837,7 +2837,7 @@ packages:
       rollup: 4.22.4
       semver: 7.5.4
       tslib: 2.6.2
-      typescript: 5.1.6
+      typescript: 5.7.3
     dev: true
 
   /rollup/4.22.4:
@@ -3075,8 +3075,8 @@ packages:
     hasBin: true
     dev: true
 
-  /typescript/5.1.6:
-    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
+  /typescript/5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
