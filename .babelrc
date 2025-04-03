@@ -1,5 +1,0 @@
-{
-  "presets": [
-      "@babel/preset-env" // 添加安装好的预设
-  ]
-}

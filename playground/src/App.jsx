@@ -1,26 +1,27 @@
-import { useState } from 'react';
-import './App.css';
 import { download } from 'downloadmejs'
+import { useState } from 'react'
+import './App.css'
 
 function App() {
-  const [url, setUrl] = useState('https://images.unsplash.com/photo-1580761743271-99d222ab2758');
-  const [name, setName] = useState('test.png');
-  const [loading, setLoading] = useState(false);
+  const [url, setUrl] = useState('https://images.unsplash.com/photo-1580761743271-99d222ab2758')
+  const [name, setName] = useState('test.png')
+  const [loading, setLoading] = useState(false)
   const onUrlInputChange = (e) => {
-    setUrl(e.target.value);
-  };
+    setUrl(e.target.value)
+  }
   const onNameInputChange = (e) => {
-    setName(e.target.value);
-  };
+    setName(e.target.value)
+  }
   const onClick = () => {
-    setLoading(true);
+    setLoading(true)
     fetch(url)
       .then(res => res.blob())
       .then(blob => download(blob, { name }))
+      // eslint-disable-next-line no-alert
       .catch(e => alert(e))
       .finally(() => {
-        setLoading(false);
-      });
+        setLoading(false)
+      })
   }
   return (
     <div className="App">
@@ -28,12 +29,20 @@ function App() {
         <textarea value={url} onChange={onUrlInputChange} />
       </div>
       <div>
-        name: <input value={name} onChange={onNameInputChange} />
+        name:
+        {' '}
+        <input value={name} onChange={onNameInputChange} />
       </div>
-      <button style={{
-        opacity: loading ? 0.6 : 1,
-        pointerEvents: loading ? 'none' : 'initial',
-      }} onClick={onClick}>{loading ? 'Downloading...' : 'Donwload'}</button>
+      <button
+        style={{
+          opacity: loading ? 0.6 : 1,
+          pointerEvents: loading ? 'none' : 'initial',
+        }}
+        type="button"
+        onClick={onClick}
+      >
+        {loading ? 'Downloading...' : 'Donwload'}
+      </button>
     </div>
   )
 }
